@@ -1,0 +1,5 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1696841046173,576,Login,200,OK,Thread Group-1 (Login Methodları) 1-1,text,true,,1038,664,1,1,https://boatest.vakifkatilim.com.tr/BOA.Integration.WCFServiceTest/BOA.Integration.Authentication/AuthenticationService.svc/Login,575,0,499
+1696841046770,224,GetConfiguration,200,OK,Thread Group-1 (Login Methodları) 1-1,text,true,,1232,699,1,1,https://boatest.vakifkatilim.com.tr/BOA.Integration.WCFServiceTest/BOA.Integration.MobileBranch/MobileBranchService.svc/GetConfiguration,224,0,0
+1696841046994,596,InitialLogin,200,OK,Thread Group-1 (Login Methodları) 1-1,text,true,,1218,914,1,1,https://boatest.vakifkatilim.com.tr/BOA.Integration.WCFServiceTest/BOA.Integration.Authentication/AuthenticationService.svc/InitialLogin,596,0,0
+1696841047591,159,OtpLogin,200,OK,Thread Group-1 (Login Methodları) 1-1,text,true,,1023,563,1,1,https://boatest.vakifkatilim.com.tr/BOA.Integration.WCFServiceTest/BOA.Integration.Authentication/AuthenticationService.svc/OtpLogin,159,0,0

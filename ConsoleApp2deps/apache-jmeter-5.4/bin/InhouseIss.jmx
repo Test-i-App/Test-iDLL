@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Kredi Kartı İşlemler" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS- Kredi Kartı Satış 6. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP (5353550144630098   - 9 tl satış)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">01C0060000000030313030767F464128E2B608313635333533353530313434363330303938303033303030303030303030303030393030303030303030303030393030303131333130353330313030303030303031353832313336313035333031303131333237303330313133303131333435313130353130303131323130303038303030303030303332353335333535303134343633303039384432373033323031303038313030393633303132313035383231333650533232333334344953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C202020202054523030383132333435363738393439393439303030303030303030303030303030303030303133369F260888C8E7CAB8B825B89F2701809F10120110A00003220000000000000000000000FF9F37040B031C129F3602047D950500000000009A032301139C01009F02060000000009005F2A020949820238009F1A0207929F03060000000000009F34031F03009F3501229F1E0831323334353637388407A00000000410109F090200029F41030100023032363030303030303030303038303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS- Kredi Kartı Satış 7. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP  5353550166454070    -34 tl satış)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">01C0060000000030313030767F464128E2B608313635333533353530313636343534303730303033303030303030303030303033343030303030303030303033343030303131333130353435393030303030303031353832313337313035343539303131333237303930313133303131333435313130353130303131323130303038303030303030303332353335333535303136363435343037304432373039323031303038313036383733303132313035383231333750533232333334344953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C202020202054523030383132333435363738393439393439303030303030303030303030303030303030303133369F26089B066BA71386CF529F2701809F10120110A00003220000000000000000000000FF9F37040B031C129F3602000B950500000000009A032301139C01009F02060000000034005F2A020949820238009F1A0207929F03060000000000009F34031F03009F3501229F1E0831323334353637388407A00000000410109F090200029F41030100023032363030303030303030303038303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Debit Kart İşlemler" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS-Debit Kart Satış 1. deneme " enabled="false">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP  (9792507079781891 - 5 tl lik nonsource ecom)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout"></stringProp>
+          <stringProp name="TCPSampler.request">0142060000000030313030767F444108E3B4083136393739323530373037393738313839313030333030303030303030303030303530303030303030303030303530303031313330393133313030303030303030313538323132393039313331303031313333303130303131333031313336333030383131313231303030383030303030303033303132303935383231323945433030303030314953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C202020202054523030383132333435363738303138303030303035343238323030353932393835393439393439303030303030303030303030303030303030303032363130323531303030303636303037393230303030303030303030</stringProp>
+          <boolProp name="TCPSampler.closeConnection">false</boolProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS-Debit Kart Satış 2. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP (9792507079781891 - 11 tl satış)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">0142060000000030313030767F444128E2BC08313639373932353037303739373831383931303033303030303030303030303031313030303030303030303031313030303131333039313731303030303030303031353832313330303931373130303131333330313030313133303131333539393239303131323130303038303030303030303332393739323530373037393738313839314433303130353236313030303035313633303132303935383231333050533232333334344953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C20202020205452303038313233343536373839343939343939384146323032373543453630384138303330303030303030303030303030303030303032363030303030303030303038303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS-Debit Kart Satış 3. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP (9792505980207345  - 8 tl satış)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">0142060000000030313030767F444128E2BC08313639373932353035393830323037333435303033303030303030303030303030383030303030303030303030383030303131333130343330353030303030303031353832313333313034333035303131333239313230313133303131333539393239303131323130303038303030303030303332393739323530353938303230373334354432393132353236313030303038303933303132313035383231333350533232333334344953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C20202020205452303038313233343536373839343939343937313343353738364538423934344531303130303030303030303030303030303030303032363030303030303030303038303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS-Debit Kart Satış 4. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP (9792507245017915   - 9 tl satış)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">0142060000000030313030767F444128E2BC08313639373932353037323435303137393135303033303030303030303030303030393030303030303030303030393030303131333130343430343030303030303031353832313334313034343034303131333330303130313133303131333539393239303131323130303038303030303030303332393739323530373234353031373931354433303031353236313030303034313933303132313035383231333450533232333334344953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C20202020205452303038313233343536373839343939343937343138323838363936354443313946303130303030303030303030303030303030303032363030303030303030303038303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="ISS-Debit Kart Satış 5. deneme" enabled="true">
+          <stringProp name="TestPlan.comments">10.1.145.11 - prep IP  10.1.137.12 - dev IP  (9792507042921855  -7 tl nonsecure ecom)</stringProp>
+          <stringProp name="TCPSampler.classname">LengthPrefixedBinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">10.1.145.11</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">30042</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout">10000</stringProp>
+          <stringProp name="TCPSampler.request">0125060000000030313030767F444108E3B4083136393739323530373034323932313835353030333030303030303030303030303730303030303030303030303730303031313331303435333030303030303030313538323133353130343533303031313333303130303131333031313336333030383131313231303030383030303030303033303132313035383231333545433030303030314953594552493030303030303030314F4E544553542053494D204953594552492020202020202020495354414E42554C202020202054523030383132333435363738303138303030303035343238323030353932313735393439393439303030303030303030303030303030303030303032363130323531303030303636303037393230303030303030303030</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\za002266\Desktop\30 user - 5 ramp - debit kart sonuçlar\ViewResultsTree.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\za002266\Desktop\30 user - 5 ramp - debit kart sonuçlar\SummaryReport.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

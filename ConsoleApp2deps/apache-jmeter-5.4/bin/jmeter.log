@@ -1,0 +1,80 @@
+2023-10-09 08:41:54,161 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2023-10-09 08:41:54,193 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-10-09 08:41:54,193 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: Version 5.4
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: java.version=1.8.0_202
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: os.name=Windows 10
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: os.arch=amd64
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: os.version=10.0
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: file.encoding=Cp1254
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: java.awt.headless=null
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: Max memory     =3745513472
+2023-10-09 08:41:54,208 INFO o.a.j.JMeter: Available Processors =12
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: Default Locale=English (United States)
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: JMeterHome=C:\Users\md003142\Desktop\apache-jmeter-5.4
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: user.dir  =C:\Users\md003142\Desktop\apache-jmeter-5.4\bin
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: PWD       =C:\Users\md003142\Desktop\apache-jmeter-5.4\bin
+2023-10-09 08:41:54,215 INFO o.a.j.JMeter: IP: 10.10.9.167 Name: NB-BSYM124 FullName: NB-BSYM124.vakifkatilim.local
+2023-10-09 08:41:54,447 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2023-10-09 08:41:55,064 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-10-09 08:42:25,605 INFO o.a.j.s.FileServer: Default base='C:\Users\md003142\Desktop\apache-jmeter-5.4\bin'
+2023-10-09 08:42:25,605 INFO o.a.j.g.a.Load: Loading file: C:\Users\md003142\Desktop\EFT-Havale-FASTGuncel.jmx
+2023-10-09 08:42:25,605 INFO o.a.j.s.FileServer: Set new base='C:\Users\md003142\Desktop'
+2023-10-09 08:42:26,069 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-10-09 08:42:26,131 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-10-09 08:42:26,131 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-10-09 08:42:26,131 INFO o.a.j.s.SaveService: Loading file: C:\Users\md003142\Desktop\EFT-Havale-FASTGuncel.jmx
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-10-09 08:42:26,185 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-10-09 08:42:26,972 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-10-09 08:42:26,972 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-10-09 08:42:26,972 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-10-09 08:42:26,972 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-10-09 08:42:28,070 WARN o.a.j.g.a.Load: Unexpected error. java.lang.NullPointerException
+java.lang.NullPointerException: null
+	at java.util.ArrayDeque.addLast(Unknown Source) ~[?:1.8.0_202]
+	at java.util.ArrayDeque.add(Unknown Source) ~[?:1.8.0_202]
+	at org.apache.jmeter.gui.action.LoadRecentProject.updateRecentFileMenuItems(LoadRecentProject.java:125) ~[ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.setProjectFileLoaded(JMeterMenuBar.java:144) ~[ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.MainFrame.setProjectFileLoaded(MainFrame.java:330) ~[ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.GuiPackage.setTestPlanFile(GuiPackage.java:732) ~[ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:136) [ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:101) [ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.action.LoadDraggedFile.loadProject(LoadDraggedFile.java:37) [ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.MainFrame.openJmxFilesFromDragAndDrop(MainFrame.java:849) [ApacheJMeter_core.jar:5.4]
+	at org.apache.jmeter.gui.MainFrame.drop(MainFrame.java:824) [ApacheJMeter_core.jar:5.4]
+	at java.awt.dnd.DropTarget.drop(Unknown Source) [?:1.8.0_202]
+	at sun.awt.dnd.SunDropTargetContextPeer.processDropMessage(Unknown Source) [?:1.8.0_202]
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchDropEvent(Unknown Source) [?:1.8.0_202]
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(Unknown Source) [?:1.8.0_202]
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(Unknown Source) [?:1.8.0_202]
+	at java.awt.Component.dispatchEventImpl(Unknown Source) [?:1.8.0_202]
+	at java.awt.Container.dispatchEventImpl(Unknown Source) [?:1.8.0_202]
+	at java.awt.Window.dispatchEventImpl(Unknown Source) [?:1.8.0_202]
+	at java.awt.Component.dispatchEvent(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue.access$500(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue$3.run(Unknown Source) [?:1.8.0_202]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_202]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [?:1.8.0_202]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue$4.run(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue$4.run(Unknown Source) [?:1.8.0_202]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_202]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [?:1.8.0_202]
+	at java.awt.EventDispatchThread.run(Unknown Source) [?:1.8.0_202]
+2023-10-09 08:42:28,079 ERROR o.a.j.u.JMeterUtils: Unexpected error - see log for details
